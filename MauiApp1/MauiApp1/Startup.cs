@@ -4,6 +4,7 @@ using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 using Microsoft.Maui.Controls.Compatibility;
 using MauiApp1.Data;
+using MudBlazor.Services;
 
 namespace MauiApp1
 {
@@ -23,6 +24,7 @@ namespace MauiApp1
 				.ConfigureServices(services =>
 				{
 					services.AddBlazorWebView();
+					services.AddMudServices();
 					services.AddSingleton<WeatherForecastService>();
 				});
 		}
